@@ -1,0 +1,2 @@
+if not exists (select * from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='tbl$Members' and COLUMN_NAME = 'FacebookToken')
+	ALTER TABLE [dbo].[tbl$Members] ALTER COLUMN [FacebookToken] varchar(200) NULL
